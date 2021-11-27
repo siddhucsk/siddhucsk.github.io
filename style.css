@@ -1,0 +1,43 @@
+@media screen and (max-width: 800px) {
+  .hero {
+    height: auto;
+  }
+  .hero>div {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .hero {
+    height: 100vh;
+  }
+  .hero > div {
+    height: 100%;
+  }
+}
+
+.parent{
+   position: relative;
+}
+.top-left{
+   position: absolute;
+   left:0;
+   top:0;
+}
+.top-right{
+   position: absolute;
+   right:0;
+   top:0;
+}
+.bottom-left{
+   position: absolute;
+   left:0;
+   bottom:0;
+}
+.bottom-right{
+   position: absolute;
+   /*right:0;*/
+   bottom:0;
+   font-size: 4em;
+   text-shadow: 1px 1px 2px black;
+}

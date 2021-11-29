@@ -45,12 +45,15 @@
     <section  id="hero" class="hero bg-dark text-light p-5 text-center text-sm-start ">
         <div class="container">
             <div class="d-sm-flex align-items-center justify-content-between h-100">
-                <div>
-                    <h1>Siddharth <span class="text-warning">Shanki</span></h1>
-                    <p class="lead my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda quisquam libero reiciendis dolore nam!</p>
+                <div class="col-md-6">
+                    <!--<h1>Siddh<span class="text-warning">-Art-</span>th</h1>-->
+                    <h1>Siddh<span class="text-warning fst-italic">-art-</span>th</h1>
+                    <p class="lead my-4 text-break">I am a student who aspires to work in the creative industry. I work on designs, illustrations, photos and videos. When I am not working on my university assignments, I work on my creative passions to weave stories and to solve problems.</p>
                     <button class="btn btn-primary btn-lg">Learn more</button>
                 </div>
-                <img class="img-fluid w-50 d-none d-sm-block" src="img/showcase.svg" alt="">
+                <div class="col-4">
+                    <img class="img-fluid  d-none d-sm-block" src="img/hero.svg" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -62,29 +65,58 @@
             <div class="row align-items-center justify-content-center mb-5 mt-5">
                 <h3 class="mb-3 md-md-0 text-center">Advertising Projects</h3>
 
-                <div class="glide h-75">
+                <div class="glide mt-3 mb-3">
                     <div class="glide__track" data-glide-el="track">
-                        <ul class="glide__slides" style="height:100px;">
-                            <img class="glide__slide" src="img/1920x1080.png"alt="">
-                            <img class="glide__slide" src="img/1920x1080.png"alt="">
-                            <img class="glide__slide" src="img/1920x1080.png"alt="">
-                            <img class="glide__slide" src="img/1920x1080.png"alt="">
-                            <img class="glide__slide" src="img/1920x1080.png"alt="">
-                            <img class="glide__slide" src="img/1920x1080.png"alt="">
-                            <img class="glide__slide" src="img/1920x1080.png"alt="">
-                            <img class="glide__slide" src="img/1920x1080.png"alt="">
+                        <ul class="glide__slides" >
+                            <img class="glide__slide" src="img/Ad-carousel-01.jpg"alt="">
+                            <img class="glide__slide" src="img/Ad-carousel-02.jpg"alt="">
+                            <img class="glide__slide" src="img/Ad-carousel-03.jpg"alt="">
+                            <img class="glide__slide" src="img/Ad-carousel-04.jpg"alt="">
                             <img class="glide__slide" src="img/1920x1080.png"alt="">
                         </ul>
                     </div>
                     <div class="glide__arrows" data-glide-el="controls">
-                        <button class=" btn btn-dark glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                        <button class="bi bi-arrow-left glide__arrow glide__arrow--left" data-glide-dir="<"></button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="bi bi-arrow-right"></i></button>
                     </div>
                     <div class="glide__bullets" data-glide-el="controls[nav]">
                         <button class="glide__bullet" data-glide-dir="=0"></button>
                         <button class="glide__bullet" data-glide-dir="=1"></button>
                         <button class="glide__bullet" data-glide-dir="=2"></button>
+                        <button class="glide__bullet" data-glide-dir="=3"></button>
+                        <button class="glide__bullet" data-glide-dir="=4"></button>
                     </div>
+                </div>
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/Ad-carousel-01.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/Ad-carousel-02.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/Ad-carousel-03.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/Ad-carousel-04.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
 
                 <div class="col-md text-center mt-3">
@@ -103,18 +135,15 @@
             <div class="row align-items-center justify-content-between mb-5 mt-5">
                 <div class="col-md">
                     <div class="parent">
-                        <img src="img/1920x1080.png" class="img-fluid card card-cover h-100 w-100 overflow-hidden p-0 m-0 text-white bg-dark rounded-5 shadow-lg" alt="" />
+                        <img src="img/01-Graphic-design.jpg" class="img-fluid card card-cover h-100 w-100 overflow-hidden p-0 m-0 text-white bg-dark rounded-5 shadow-lg" alt="" />
                        <h1 class="bottom-right fw-bolder text-white fst-italic text-end w-100 pe-3">01</h1>
                     </div>
                 </div>
                 <div class="col-md p-5">
-                    <h2>Lorem ipsum dolor</h2>
-                    <p class="lead"> Lorem ipsum dolor, sit amet consectetur </p>
+                    <h2>Graphic Design work</h2>
+                    <p class="lead">Lorem ipsum dolor, sit amet consectetur</p>
                     <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
-                    reiciendis eius autem eveniet mollitia, at asperiores suscipit
-                    quae similique laboriosam iste minus placeat odit velit quos,
-                    nulla architecto amet voluptates?
+                        Multiple quirky Edits ranging from experimentation of styles and presentation. 
                     </p>
                     <a href="#" class="btn btn-light mt-3"> <i class="bi bi-chevron-right"></i> Read More </a>
                 </div>
@@ -123,18 +152,15 @@
             <div class="row align-items-center justify-content-between mb-5 mt-5">
                 <div class="col-md">
                     <div class="parent">
-                        <img src="img/1920x1080.png" class="img-fluid card card-cover h-100 w-100 overflow-hidden p-0 m-0 text-white bg-dark rounded-5 shadow-lg" alt="" />
+                        <img src="img/02-Illustration-and-Vector.jpg" class="img-fluid card card-cover h-100 w-100 overflow-hidden p-0 m-0 text-white bg-dark rounded-5 shadow-lg" alt="" />
                        <h1 class="bottom-right fw-bolder text-white fst-italic text-end w-100 pe-3">02</h1>
                     </div>
                 </div>
                 <div class="col-md p-5">
-                    <h2>Lorem ipsum dolor</h2>
-                    <p class="lead"> Lorem ipsum dolor, sit amet consectetur </p>
+                    <h2>Vector Design</h2>
+                    <p class="lead">Lorem ipsum dolor, sit amet consectetur </p>
                     <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
-                    reiciendis eius autem eveniet mollitia, at asperiores suscipit
-                    quae similique laboriosam iste minus placeat odit velit quos,
-                    nulla architecto amet voluptates?
+                        Take a peek at the union and play  with colors , composition, hierarchy, to attract the attention of your eyeballs
                     </p>
                     <a href="#" class="btn btn-light mt-3"> <i class="bi bi-chevron-right"></i> Read More </a>
                 </div>
@@ -143,18 +169,15 @@
             <div class="row align-items-center justify-content-between mb-5 mt-5">
                 <div class="col-md">
                     <div class="parent">
-                        <img src="img/1920x1080.png" class="img-fluid card card-cover h-100 w-100 overflow-hidden p-0 m-0 text-white bg-dark rounded-5 shadow-lg" alt="" />
+                        <img src="img/03-Other-projects.jpg" class="img-fluid card card-cover h-100 w-100 overflow-hidden p-0 m-0 text-white bg-dark rounded-5 shadow-lg" alt="" />
                        <h1 class="bottom-right fw-bolder text-white fst-italic text-end w-100 pe-3">03</h1>
                     </div>
                 </div>
                 <div class="col-md p-5">
-                    <h2>Lorem ipsum dolor</h2>
+                    <h2>Other Projects</h2>
                     <p class="lead"> Lorem ipsum dolor, sit amet consectetur </p>
                     <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
-                    reiciendis eius autem eveniet mollitia, at asperiores suscipit
-                    quae similique laboriosam iste minus placeat odit velit quos,
-                    nulla architecto amet voluptates?
+                        Choose from a variety of multiple creative pursuits ranging from video work, photography and even modelling that charm your eyes.
                     </p>
                     <a href="#" class="btn btn-light mt-3"> <i class="bi bi-chevron-right"></i> Read More </a>
                 </div>
@@ -171,7 +194,7 @@
                 <div class="mt-3 mb-3 ms-md-5">
                     <h4 class="mb-4">Contact Me</h4>
                     <button class="btn btn-primary btn-lg">
-                        SidEmail@email.com
+                        Siddhucsk@gmail.com
                         <i class="bi bi-clipboard"></i>
                         <i class="bi bi-clipboard-check"></i>
                     </button>
@@ -179,7 +202,7 @@
 <form>
     <div class="input-group">
         <input type="text" class="form-control"
-        value="SidEmail@email.com" placeholder="Some path" id="copy-input">
+        value="Siddhucsk@gmail.com" placeholder="Some path" id="copy-input">
         <span class="input-group-btn">
             <button class="btn btn-default" type="button" id="copy-button"
             data-toggle="tooltip" data-placement="button"
@@ -195,11 +218,13 @@
                 <div class="mt-3 mb-3 me-md-5">
                     <h4 class="mb-3">Find Me On</h4>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-decoration-none"><i class="bi bi-instagram"></i> Instagram</a></li>
-                        <li><a href="#" class="text-decoration-none"><i class="bi bi-linkedin"></i> Linkedin</a></li>
-                        <li><a href="#" class="text-decoration-none"><i class="bi bi-snapchat"></i> Snapchat</a></li>
-                        <li><a href="#" class="text-decoration-none"><i class="bi bi-behance"></i> Behance</a></li>
-                        <li><a href="#" class="text-decoration-none"><i class="bi bi-dribbble"></i> Dribbble</a></li>
+                        <li><a href="https://www.instagram.com/siddhucsk" class="text-decoration-none"><i class="bi bi-instagram"></i> Instagram</a></li>
+
+                        <li><a href="https://linkedin.com/in/siddharth-s-462510225" class="text-decoration-none"><i class="bi bi-linkedin"></i> Linkedin</a></li>
+
+                        <li><a href="https://www.behance.net/siddhucsk" class="text-decoration-none"><i class="bi bi-behance"></i> Behance</a></li>
+
+                        <li><a href="https://dribbble.com/Siddhucsk" class="text-decoration-none"><i class="bi bi-dribbble"></i> Dribbble</a></li>
                     </ul>
                 </div>
             </div>
@@ -227,7 +252,8 @@
         const config = {
             type: 'carousel',
             focusAt: 'center',
-            perView: 6,
+            perView: 5,
+            gap: 10,
             breakpoints: {
             1024: {
               perView: 2
@@ -235,7 +261,7 @@
             600: {
               perView: 1
             }
-          }
+        }
         }
         new Glide('.glide', config).mount()
     </script>

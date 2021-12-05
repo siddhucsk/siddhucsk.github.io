@@ -1,6 +1,6 @@
 # siddhucsk.github.io
 
-### Siddhu's portfoilo site [click here](siddhucsk.github.io)  
+### Siddhu's portfoilo site [click here](https://siddhucsk.github.io/)  
 live version of this repo - [click here](https://kailashganesh.github.io/siddhucsk.github.io/)  
 
 #### Website built using:
